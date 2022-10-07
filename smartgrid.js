@@ -4,15 +4,15 @@ let settings = {
     outputStyle: 'scss',
     columns: 12,
     offset: '16px',
-    mobileFirst: false,
+    mobileFirst: true,
     container: {
-        maxWidth: '1170px',
-        fields: '135px'
+        maxWidth: '1440px',
+        fields: '150px'
     },
     breakPoints: {
         lm: {
-            width: '1280px',
-            fields: '50px'
+            width: '1440px',
+            fields: '150px'
         },
         md: {
             width: '940px',
@@ -23,8 +23,8 @@ let settings = {
             fields: '15px'
         },
         xxs: {
-            width: '440px',
-            fields: '10px'
+            width: '375px',
+            fields: '17px'
         }
     }
 };

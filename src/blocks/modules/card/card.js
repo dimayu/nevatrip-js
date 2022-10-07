@@ -1,4 +1,4 @@
-modules.define('footer', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('card', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {
