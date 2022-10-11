@@ -7,3 +7,76 @@
 .wrapper {
   @include wrapper();
 }
+
+select {
+  width: 100%;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #80A3C0;
+  background-color: #EAF3F7;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.main {
+  &__form {
+    width: 30%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E6EEF1;
+    padding: 14px 24px;
+
+    &__select {
+      display: flex;
+      position: relative;
+      height: 52px;
+      overflow: hidden;
+      padding: 14px 20px;
+      background-color: #EAF3F7;
+      box-sizing: border-box;
+      margin: 14px 0;
+
+      &::after {
+        content: '\25BC';
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        color: #80A3C0;
+        font-size: 12px;
+        transition: .25s all ease;
+        pointer-events: none;
+      }
+    }
+
+    &__input {
+      display: flex;
+      height: 52px;
+      overflow: hidden;
+      padding: 14px 20px;
+      background-color: #EAF3F7;
+      box-sizing: border-box;
+      margin: 14px 0;
+      border: none;
+    }
+
+    &__btn {
+      height: 52px;
+      background-color: #FF7C45;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000;
+      border: none;
+      margin-bottom: 24px;
+    }
+  }
+}
